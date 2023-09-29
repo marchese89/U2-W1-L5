@@ -32,7 +32,7 @@
     margin-right: 1em;
   }
 
-  ul li:last-of-type {
+  #li-btn {
     background-color: black;
     color: white;
     padding: 1em;
@@ -281,9 +281,54 @@
 
   #articles {
     flex-grow: 1;
-    margin-left: 5%;
+    margin-left: 10%;
+    margin-right: 0%;
   }
   aside {
     position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+    padding-top: 5em;
+    justify-content: flex-start;
+  }
+  aside h3 {
+    text-align: left;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  aside > div {
+    width: 25em;
+  }
+
+  aside > div > button {
+    border: 0;
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 1.5px solid #edeeee;
+    background-color: white;
+    border-radius: 3px;
+    color: #797a82;
+  }
+
+  aside > ul {
+    width: 25em;
+    line-height: 2;
+    margin-top: 1em;
+  }
+
+  aside > ul > li {
+    color: #797a82;
+    padding: 0.3em;
+    margin: 0.2em;
+  }
+
+  aside > hr {
+    margin-top: 1.3em;
+    width: 70%;
   }
 }
