@@ -78,6 +78,10 @@
     padding-right: 1.5em;
   }
 
+  #right img {
+    height: 100%;
+  }
+
   #nav-bottom svg {
     display: flex;
     justify-content: flex-end;
@@ -99,6 +103,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 2em;
+  }
+  hr {
+    color: #f3f3f3;
+    height: 2px;
+    background-color: #f3f3f3;
+    margin: 0;
+    border: 0;
   }
 
   .trend {
@@ -177,5 +189,101 @@
   #left {
     display: flex;
     flex-grow: 2;
+  }
+
+  main {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 2em;
+  }
+
+  .article {
+    margin-left: 20%;
+    margin-right: 35%;
+    margin-top: 5em;
+    display: flex;
+    width: 50vw;
+  }
+  #articles article {
+    position: relative;
+  }
+
+  article {
+    width: 20vw;
+    /* height: 10vh; */
+  }
+
+  article .row-1 img {
+    border-radius: 50%;
+  }
+  article .row-1 span {
+    position: absolute;
+    top: 12px;
+    left: 50px;
+    font-weight: bold;
+    color: #241719;
+    font-size: 0.8em;
+  }
+
+  .row-2 h2 {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+  }
+
+  .row-3 p {
+    color: #706c6c;
+    padding-right: 1em;
+    font-size: 0.6em;
+    padding-top: 0.5em;
+  }
+
+  .article > img {
+    height: 7.5em;
+    margin-left: 3em;
+  }
+
+  .row-4 {
+    font-size: 0.6em;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .row-4 p {
+    flex-grow: 1;
+  }
+  .row-4 p img {
+    padding-top: 0.5em;
+    margin-bottom: -0.6em;
+    margin-left: 0.3em;
+  }
+
+  .row-4 > img {
+    right: 0;
+  }
+  .row-4 p span {
+    background-color: #f1f3f3;
+    padding: 0.3em 0.8em;
+    border-radius: 10px;
+  }
+
+  #articles .article:nth-of-type(6) article .row-1 img {
+    border-radius: 7px;
+  }
+
+  #articles .article:nth-of-type(4) article .row-1 img {
+    border: 1px solid #f2f3f3;
+  }
+
+  #page-center {
+    display: flex;
+  }
+
+  #articles {
+    flex-grow: 1;
+    margin-left: 5%;
+  }
+  aside {
+    position: sticky;
   }
 }
