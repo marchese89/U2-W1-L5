@@ -5,15 +5,27 @@
   header {
     background-color: #ffc017;
     border-bottom: 1px solid black;
+    margin-top: 4.8em;
   }
   nav {
+    background-color: #ffc017;
     height: 6.8em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 0.7em;
     border-bottom: 1px solid black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
   }
+
+  nav.changed {
+    background-color: white;
+    transition: all 0.8s ease;
+  }
+
   nav img {
     height: 28%;
     margin-left: 20%;
@@ -41,9 +53,13 @@
     border-radius: 2em;
   }
 
+  .changed #li-btn {
+    background-color: #156d12;
+    transition: all 0.8s ease;
+  }
+
   #nav-bottom {
     display: flex;
-    /* justify-content: flex-end; */
     height: 48vh;
   }
 
@@ -277,6 +293,7 @@
 
   #page-center {
     display: flex;
+    position: sticky;
   }
 
   #articles {
@@ -286,6 +303,7 @@
   }
   aside {
     position: sticky;
+    top: 6.8em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,11 +319,11 @@
     font-weight: bold;
   }
 
-  aside > div {
+  aside #inner > div {
     width: 25em;
   }
 
-  aside > div > button {
+  aside #inner > div > button {
     border: 0;
     margin: 0.5em;
     padding: 0.5em;
@@ -315,20 +333,29 @@
     color: #797a82;
   }
 
-  aside > ul {
+  aside #inner > ul {
     width: 25em;
     line-height: 2;
     margin-top: 1em;
   }
 
-  aside > ul > li {
+  aside #inner > ul > li {
     color: #797a82;
     padding: 0.3em;
     margin: 0.2em;
   }
 
-  aside > hr {
+  aside #inner > hr {
     margin-top: 1.3em;
     width: 70%;
+  }
+
+  /* .article:nth-of-type(3) {
+    position: sticky;
+    top: 6.8em;
+  } */
+  #dx #inner {
+    position: sticky;
+    top: 6.8em;
   }
 }
