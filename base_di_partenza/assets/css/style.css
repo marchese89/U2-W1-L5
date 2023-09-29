@@ -18,7 +18,8 @@
     height: 28%;
     margin-left: 20%;
   }
-  #right button {
+
+  #left button {
     background-color: black;
     color: white;
   }
@@ -46,7 +47,7 @@
     height: 48vh;
   }
 
-  #nav-bottom #right {
+  #nav-bottom #left {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -54,21 +55,22 @@
     margin-left: 20%;
   }
 
-  #right h2 {
+  #left h2 {
     font-size: 3.2em;
     font-weight: bold;
     text-wrap: nowrap;
     margin-top: 2em;
     margin-bottom: 0.2em;
+    margin-right: auto;
   }
-  #right p {
+  #left p {
     line-height: 1;
     margin-bottom: 1.5em;
     font-size: 0.85em;
     width: 18em;
     margin-right: auto;
   }
-  #right button {
+  #left button {
     margin-right: auto;
     border-radius: 3em;
     padding: 0.5em;
@@ -162,5 +164,18 @@
   .trend-row-3 {
     font-size: 0.7em;
     color: #6b6b6b;
+  }
+  .trend-row-3 {
+    position: relative;
+  }
+  .trend-row-3 img {
+    position: absolute;
+    bottom: -4px;
+    left: 93px;
+  }
+
+  #left {
+    display: flex;
+    flex-grow: 2;
   }
 }
